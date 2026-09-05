@@ -54,12 +54,20 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: Code2, // You can change this to a relevant icon
+      icon: Network, // AI agent / backend systems work
+      title: "Junior Software Engineer",
+      company: "RavenCast Labs",
+      period: "Jun 2025 – Present",
+      description:
+        "Building Agent Alfie, a Telegram-based Solana intelligence agent analyzing tokens, wallets, and market activity across 10+ signals using Python, TypeScript, and the OpenAI API. Engineered the backend AI workflow with OpenAI tool calling to orchestrate specialized data sources, integrating sentiment scoring and ML-based anomaly detection for real-time monitoring. Also built a copy-trading intelligence system analyzing 200+ wallets across 6 months of trading activity.",
+    },
+    {
+      icon: Code2,
       title: "Full Stack Web Development Intern",
       company: "Media Urbana",
       period: "Sep 2024 – Oct 2024",
       description:
-        "Developed a full-stack web application using ReactJS, Node.js, MongoDB, and Firebase, following industry-based code strategies. Integrated React packages for better UI responsiveness. Optimized Firebase for real-time database, authentication, and API handling, achieving 99.9% uptime. Deployed scalable backend with Node.js and MongoDB. Also worked with MySQL and phpMyAdmin to improve query execution.",
+        "Developed and deployed full-stack features using React.js, Node.js, Express.js, and MongoDB, implementing responsive interfaces, REST APIs, authentication, and database integration. Optimized database queries and real-time data handling, improving application responsiveness while supporting 1,000+ daily requests.",
     },
   ];
 
@@ -98,7 +106,7 @@ const ExperienceSection = () => {
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
-              "Transforming ideas into digital reality, one project at a time"
+              "Turning data into intelligent systems, one agent at a time"
             </p>
           </div>
 
