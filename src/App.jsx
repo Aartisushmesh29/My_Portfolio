@@ -7,7 +7,7 @@ import Header from "./pages/Header/Header";
 import Hero from "./pages/Hero/Hero";
 import Skills from "./pages/Skills/Skills";
 import Education from "./pages/Education/Education";
-import { Analytics } from "@vercel/analytics/next"
+
 
 import { Route, Routes } from "react-router-dom";
 
@@ -17,7 +17,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <Analytics/>
       {/* Conditional Rendering */}
       {isOnePage ? (
         // One-Page Mode: Render all components together
