@@ -7,7 +7,7 @@ export default function About() {
       <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
-            Developer, Designer, Creator, Innovator
+            Engineer, Builder, Problem Solver
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
             <div className="relative mb-6 sm:mb-0">
@@ -24,10 +24,10 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello I’m Aarti, a passionate Full Stack Developer with hands-on experience in building scalable web applications using React, Node.js, and MongoDB. I enjoy solving real-world problems through code, love competitive programming, and thrive on continuous learning. Currently pursuing B.Tech in IT with a strong foundation in core CS concepts.
+                Hello I'm Aarti, a Software Engineer with 1.5+ years of experience building AI-powered backend systems, LLM-driven agents, and data platforms using Python, TypeScript, Node.js, and the OpenAI API. I enjoy solving real-world problems through code, love competitive programming, and thrive on continuous learning. I hold a B.Tech in Information Technology with a strong foundation in core CS concepts.
               </p>
               <p className="text-white">
-                My focus is on making web development faster, easier, and more accessible for everyone. I'm currently deepening my backend skills to grow as a full-stack developer. I’m not bound to any specific tech stack—I'm an engineer first, not just a frameworker—driven by problem-solving and building seamless, robust web applications.
+                My focus is on building AI-powered systems that are fast, reliable, and genuinely useful—from LLM tool-calling workflows to real-time data pipelines. I'm not bound to any specific tech stack—I'm an engineer first, not just a frameworker—driven by problem-solving and building seamless, robust backend systems.
               </p>
 
               <div className="pt-6">
@@ -46,11 +46,11 @@ export default function About() {
                       <img
                         className="h-5 w-fit"
                         src={OlovaLogo}
-                        alt="Olova Logo"
+                        alt="RavenCast Labs Logo"
                         height="20"
                         width="auto"
                       />
-                      <span className="text-white">Junior Engineer</span>
+                      <span className="text-white">Junior Software Engineer</span>
                     </div>
                   </div>
                 </blockquote>
