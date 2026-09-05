@@ -19,10 +19,10 @@ const EducationSection = () => {
       school: "JSS Academy of Technical Education, Noida",
       mascot: "🎓",
       year: "2021–2025",
-      achievements: ["SGPA: 8.0", "Percentage: 80% (till 7th semester)"],
+      achievements: ["SGPA: 8.1", "Percentage: 81%"],
       skills: ["Data Structures", "DBMS", "Operating Systems", "OOP"],
       description:
-        "Pursuing engineering with a strong focus on full stack development, core computer science subjects, and hands-on project building.",
+        "Completed engineering with a strong focus on full stack development, core computer science subjects, and hands-on project building.",
     },
     {
       degree: "Class 12th (Intermediate)",
