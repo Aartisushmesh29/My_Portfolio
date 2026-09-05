@@ -9,11 +9,39 @@ import {
 } from "lucide-react";
 import glamgait from "@/assets/images/GlamGait.png";
 import imageSearcher from "@/assets/images/ChitraKhoj.png";
+import adaptiveLearn from "@/assets/images/AdaptiveLearn.png";
+import aiInventory from "@/assets/images/AIInventory.png";
 
 const ProjectShowcase = () => {
   const [filter, setFilter] = useState("All");
 
   const projects = [
+    {
+      title: "AdaptiveLearn",
+      description:
+        "An adaptive learning platform featuring interactive videos and LLM-generated quizzes mapped to transcripts. Built automated content-recommendation pipelines that analyze user weak points and quiz history, backed by a PostgreSQL schema managing video content, assessments, user attempts, and mastery tracking.",
+      tags: ["Python", "FastAPI", "LLMs", "PostgreSQL", "Next.js", "React"],
+      category: "AI/Backend",
+      links: {
+        github: "https://github.com/Aartisushmesh29/AdaptiveLearn", // Replace with actual URL
+        demo: "#", // Replace with actual URL
+      },
+      image: adaptiveLearn, // Replace with an actual screenshot
+      featured: true,
+    },
+    {
+      title: "AI Inventory Management System",
+      description:
+        "An inventory backend supporting stock management, concurrent order reservations, low-stock alerts, and audit logging. Implemented database transactions, row-level locking, and event-driven workflows to prevent overselling and maintain consistency during concurrent orders.",
+      tags: ["Python", "FastAPI", "PostgreSQL", "Redis"],
+      category: "AI/Backend",
+      links: {
+        github: "https://github.com/Aartisushmesh29/AI-Inventory-Management", // Replace with actual URL
+        demo: "#", // Replace with actual URL
+      },
+      image: aiInventory, // Replace with an actual screenshot
+      featured: true,
+    },
     {
       title: "GlamGait - E-commerce Platform",
       description:
@@ -25,7 +53,7 @@ const ProjectShowcase = () => {
         demo: "https://glamgait-shopping.vercel.app/", // Replace with actual URL
       },
       image: glamgait, // Make sure 'glamgait' is imported or defined
-      featured: true,
+      featured: false,
     },
     {
       title: "Image Searcher App",
@@ -74,7 +102,7 @@ const ProjectShowcase = () => {
             <div className="absolute -bottom-2 left-0 w-full h-3 bg-gradient-to-r from-cyan-500 to-emerald-500 opacity-70 blur-sm"></div>
           </div>
           <p className="text-slate-300 max-w-2xl mx-auto text-lg">
-            Explore my creative journey through code and design
+            Building AI-powered systems and full-stack applications
           </p>
         </div>
 
