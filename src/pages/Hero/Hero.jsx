@@ -42,25 +42,25 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "Interest in C/C++ and DSA",
+    "Software Engineer & AI/LLM Enthusiast",
+    "Building Backend Systems with Python",
     "Learning Engineering",
   ];
 
   const [code] = useState(`
 const profile = {
     name: 'Aarti',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    title: 'Software Engineer | AI/LLM Applications | Backend Systems',
     skills: [
-    'React', 'Next.js', 'Tailwind CSS', 'JavaScript', 'TypeScript',
-    'Node.js', 'Express.js', 'MongoDB', 'MySQL', 'Firebase',
-    'Cloudinary', 'AWS', 'JWT', 'RESTful APIs', 'Git', 'GitHub', 
-    'Postman', 'Figma', 'C/C++', 'Python'
+    'Python', 'TypeScript', 'FastAPI', 'Node.js', 'Express.js',
+    'OpenAI API', 'LLMs', 'Prompt Engineering', 'Tool Calling',
+    'PostgreSQL', 'MongoDB', 'Redis', 'REST APIs', 'JWT',
+    'Git', 'GitHub', 'Postman', 'C/C++'
 ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    yearsOfExperience: 1.5, 
     hireable: function() {
         return (
             this.hardWorker &&
@@ -159,7 +159,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | Problem Solver 💻✨
+                  AI/LLM & Backend Engineer 🚀 | Python + TypeScript 💻✨
                 </p>
               </div>
 
@@ -197,7 +197,7 @@ const profile = {
               {/* Floating badges */}
               <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
                 <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
-                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI/UX
+                  <i className="fas fa-robot"></i>&nbsp;&nbsp;AI/LLM
                 </div>
               </div>
               <div className="hidden lg:block absolute right-10 top-20 animate-float">
@@ -207,7 +207,7 @@ const profile = {
               </div>
               <div className="hidden lg:block absolute top-[17rem] left-[70%] transform -translate-x-1/2 animate-float">
                 <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400">
-                  <i className="fas fa-lightbulb"></i>&nbsp;&nbsp;Innovation
+                  <i className="fas fa-server"></i>&nbsp;&nbsp;Backend
                 </div>
               </div>
             </div>
