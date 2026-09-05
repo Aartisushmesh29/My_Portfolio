@@ -2,15 +2,13 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+import { Code2, Database, Cpu, Cloud } from "lucide-react";
 import {
   FaReact,
   FaNodeJs,
   FaPython,
-  FaDocker,
   FaGitAlt,
-  FaLinux,
-  FaFigma,
+  FaGithub,
   FaAws,
 } from "react-icons/fa";
 import {
@@ -19,17 +17,15 @@ import {
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
-  SiGraphql,
   SiJest,
-  SiWebpack,
-  SiRedux,
-  SiFirebase,
-  SiVercel,
-  SiVite,
+  SiOpenai,
+  SiFastapi,
+  SiExpress,
+  SiRedis,
+  SiPostman,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
-import { MdAnimation } from "react-icons/md";
 import { FcWorkflow } from "react-icons/fc";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
@@ -67,6 +63,54 @@ const SkillCard = ({ icon: Icon, title, skills, color }) => (
 const SkillsSection = () => {
   const skillCategories = [
     {
+      icon: Cpu,
+      title: "AI/LLM Engineering",
+      color: "text-purple-400",
+      skills: [
+        { name: "OpenAI API", icon: <SiOpenai className="w-4 h-4 text-white" /> },
+        { name: "LLMs", icon: <Cpu className="w-4 h-4 text-purple-400" /> },
+        {
+          name: "Prompt Engineering",
+          icon: <Code2 className="w-4 h-4 text-blue-400" />,
+        },
+        {
+          name: "Tool Calling",
+          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
+        },
+        {
+          name: "Python",
+          icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
+        },
+      ],
+    },
+    {
+      icon: Database,
+      title: "Backend Development",
+      color: "text-green-400",
+      skills: [
+        {
+          name: "Node.js",
+          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
+        },
+        {
+          name: "FastAPI",
+          icon: <SiFastapi className="w-4 h-4 text-[#009688]" />,
+        },
+        {
+          name: "Express.js",
+          icon: <SiExpress className="w-4 h-4 text-white" />,
+        },
+        {
+          name: "REST APIs",
+          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
+        },
+        {
+          name: "JWT",
+          icon: <Code2 className="w-4 h-4 text-yellow-400" />,
+        },
+      ],
+    },
+    {
       icon: Code2,
       title: "Frontend Development",
       color: "text-blue-400",
@@ -96,17 +140,9 @@ const SkillsSection = () => {
     },
     {
       icon: Database,
-      title: "Backend Development",
-      color: "text-green-400",
+      title: "Databases & Data",
+      color: "text-cyan-400",
       skills: [
-        {
-          name: "Node.js",
-          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
-        },
-        {
-          name: "Python",
-          icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
-        },
         {
           name: "PostgreSQL",
           icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
@@ -115,25 +151,10 @@ const SkillsSection = () => {
           name: "MongoDB",
           icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
         },
+        { name: "Redis", icon: <SiRedis className="w-4 h-4 text-[#DC382D]" /> },
         {
-          name: "REST APIs",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
-        },
-      ],
-    },
-    {
-      icon: Layout,
-      title: "UI/UX Design",
-      color: "text-purple-400",
-      skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
+          name: "SQL / NoSQL",
+          icon: <Database className="w-4 h-4 text-cyan-400" />,
         },
       ],
     },
@@ -142,8 +163,10 @@ const SkillsSection = () => {
       title: "Cloud & DevOps",
       color: "text-orange-400",
       skills: [
-        { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
         { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
+        { name: "GitHub", icon: <FaGithub className="w-4 h-4 text-white" /> },
+        { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
+        { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
       ],
     },
     {
@@ -155,41 +178,11 @@ const SkillsSection = () => {
           name: "VS Code",
           icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
         },
+        {
+          name: "Postman",
+          icon: <SiPostman className="w-4 h-4 text-[#FF6C37]" />,
+        },
         { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
-        {
-          name: "Webpack",
-          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
-        },
-        { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
-        {
-          name: "Firebase",
-          icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
-        },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
-      ],
-    },
-    {
-      icon: Paintbrush,
-      title: "Creative Skills",
-      color: "text-yellow-400",
-      skills: [
-        {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
-        },
-        {
-          name: "SVG Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "3D Modeling",
-          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Motion Graphics",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
-        },
       ],
     },
   ];
